@@ -16,11 +16,8 @@ export interface GameQuery {
   sortOrder: string;
   searchText: string;
 }
-interface Props {
-  onSearch: (searchText: string) => void;
-}
 
-function App({ onSearch }: Props) {
+function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
 
   return (
